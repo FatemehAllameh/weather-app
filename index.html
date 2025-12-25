@@ -12,6 +12,62 @@
     />
   </head>
   <body>
+    <div class="app-container">
+      <div class="title-box">
+        <button class="back-btn">
+          <i class="fa fa-arrow-left"></i>
+        </button>
+        <h1 class="title">Weather App</h1>
+      </div>
+
+      <!-- search box container -->
+      <div class="search-box-container">
+        <form action="#" class="search-form">
+          <p class="error-message"></p>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="enter city name"
+            autocomplete="off"
+          />
+          <div></div>
+        </form>
+
+        <!-- seprator line -->
+        <span class="seprator"></span>
+
+        <button class="device-loc-btn">Get Device Location</button>
+      </div>
+
+      <!-- result container -->
+      <div class="result-container">
+        <img src="./assets/suny.png" alt="" class="weater-icon" />
+
+        <h2 class="text-temperature">279.45 C</h2>
+        <p class="text-description">clear sky</p>
+        <p class="location-box">
+          <i class="fa fa-map-marker"></i>
+          <span class="text-location">Herat، AF</span>
+        </p>
+        <div class="weather-details">
+          <div class="detail-column">
+            <i class="bx bxs-thermometer"></i>
+            <div>
+              <p class="feels-like-text">279.45 C</p>
+              <p class="detail-text">feels like</p>
+            </div>
+          </div>
+
+          <div class="detail-column">
+            <i class="bx bxs-droplet-half"></i>
+            <div>
+              <p class="humadity-text">279.45 C</p>
+              <p class="detail-text">humadity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- SCRIPTS -->
     <script src="./script.js"></script>
   </body>
