@@ -182,3 +182,42 @@ button {
 
 .humadity-text {
 }
+
+/* 
+==============
+  Responsive
+==============
+*/
+
+/* ====== 480px ====== */
+
+@media (min-width: 480px) {
+}
+
+/* ====== 576px ====== */
+@media (min-width: 576px) {
+  .app-container {
+    width: 80%;
+  }
+}
+
+/* ====== 768px ====== */
+@media (min-width: 758px) {
+  .app-container {
+    width: 65%;
+  }
+}
+
+/* ====== 992px ====== */
+@media (min-width: 992px) {
+  .app-container {
+    width: 50%;
+  }
+}
+
+/* ====== 1200px ====== */
+@media (min-width: 1200px) {
+  .app-container {
+    width: 35%;
+  }
+}
