@@ -51,7 +51,6 @@ button {
   background-color: #1f1f1f;
   border: 1px solid #f9f9f9;
   border-radius: 10px;
-  padding-bottom: 1.5rem;
 }
 
 .title-box {
@@ -85,11 +84,10 @@ button {
 
 .search-box-container {
   padding: 1rem 1.5rem;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* gap: 2rem; */
 }
 
 .search-form {
@@ -146,41 +144,76 @@ button {
   border-radius: 8px;
   padding: 1rem;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
 }
 
 .result-container {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
 }
 
 .weater-icon {
+  width: 20rem;
+}
+
+.text-temperature {
+  font-size: 4rem;
 }
 
 .text-description {
+  font-size: 1.5rem;
 }
 
 .location-box {
 }
 
+.fa-map-marker {
+  font-size: 1.5rem;
+}
+
 .text-location {
+  font-size: 1.5rem;
+  width: 100%;
 }
 
 .weather-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .detail-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid #2e2e2e;
+  border-bottom: 0;
+  width: 50%;
+  padding: 2rem 1.5rem;
 }
 
 .bx {
+  font-size: 3rem;
+  color: #6991cc;
 }
 
 .feels-like-text {
+  font-size: 1.5rem;
 }
 
 .detail-text {
+  font-size: 1.5rem;
 }
 
 .humadity-text {
+  font-size: 1.5rem;
 }
 
 /* 
@@ -197,27 +230,27 @@ button {
 /* ====== 576px ====== */
 @media (min-width: 576px) {
   .app-container {
-    width: 80%;
+    width: 75%;
   }
 }
 
 /* ====== 768px ====== */
 @media (min-width: 758px) {
   .app-container {
-    width: 65%;
+    width: 60%;
   }
 }
 
 /* ====== 992px ====== */
 @media (min-width: 992px) {
   .app-container {
-    width: 50%;
+    width: 45%;
   }
 }
 
 /* ====== 1200px ====== */
 @media (min-width: 1200px) {
   .app-container {
-    width: 35%;
+    width: 30%;
   }
 }
