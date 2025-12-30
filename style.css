@@ -7,13 +7,22 @@
 }
 
 body {
-  font-family: varela;
-  background: var(--bg);
+  height: 100vh;
+  font-family: varela, sahe1;
+  background: linear-gradient(180deg, #2c3e50 50%, #1a1a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @font-face {
   font-family: "varela";
   src: url("./assets/varela-round.ttf");
+}
+
+@font-face {
+  font-family: "sahel" "";
+  src: url("./assets/sahel.ttf");
 }
 
 a {
@@ -35,4 +44,141 @@ input {
 
 button {
   cursor: pointer;
+}
+
+.app-container {
+  width: 90%;
+  background-color: #1f1f1f;
+  border: 1px solid #f9f9f9;
+  border-radius: 10px;
+  padding-bottom: 1.5rem;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  width: 100%;
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #2e2e2e;
+  padding: 2rem 1.5rem;
+}
+
+.back-btn {
+  display: none;
+  color: #6c90c6;
+  text-shadow: 0 0 5px rgba(108, 144, 198, 0.3),
+    0 0 10px rgba(108, 144, 198, 0.2), 0 0 15px rgba(108, 144, 198, 0.1);
+}
+
+.fa {
+}
+
+.title {
+  color: #6c90c6;
+  text-shadow: 0 0 5px rgba(108, 144, 198, 0.3),
+    0 0 10px rgba(108, 144, 198, 0.2), 0 0 15px rgba(108, 144, 198, 0.1);
+}
+
+.search-box-container {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+
+.search-form {
+  width: 100%;
+}
+
+.error-message {
+}
+
+.search-input {
+  font-size: 1.7rem;
+  background-color: #333;
+  border-radius: 8px;
+  height: 4rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #555;
+  color: white;
+}
+
+.seprator {
+  position: relative;
+  width: 100%;
+  font-size: 2rem;
+  color: #545454;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.seprator::after {
+  content: "";
+  background-color: #2e2e2e;
+  width: 45%;
+  height: 1px;
+  position: absolute;
+  right: 0;
+}
+
+.seprator::before {
+  content: "";
+  background-color: #2e2e2e;
+  width: 45%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+}
+
+.device-loc-btn {
+  background-color: #6c90c6;
+  width: 100%;
+  height: 4.5rem;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.result-container {
+  display: none;
+}
+
+.weater-icon {
+}
+
+.text-description {
+}
+
+.location-box {
+}
+
+.text-location {
+}
+
+.weather-details {
+}
+
+.detail-column {
+}
+
+.bx {
+}
+
+.feels-like-text {
+}
+
+.detail-text {
+}
+
+.humadity-text {
 }
