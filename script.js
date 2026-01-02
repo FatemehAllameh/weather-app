@@ -14,15 +14,27 @@ searchForm.addEventListener("submit", (e) => {
   }
 });
 
+// Get weather from API
 const getWeather = async (url) => {
-  const response = await fetch(url);
-  const data = await response.json();
-  if (data.cod === "404") {
-    displayErroe(data.message);
+  searchForm.classList.add("loading");
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    // if city not found
+    if (data.cod === "404") {
+      displayErroe(data.message);
+    } else {
+      errorMessage.style.display = "none";
+      console.log(data);
+    }
+  } catch (err) {
+    displayErroe("An error occurred while fetching the weather data.");
+  } finally {
+    searchForm.classList.remove("loading");
   }
-  console.log(data);
 };
 
+// function to show error
 const displayErroe = (error) => {
   errorMessage.style.display = "block";
   errorMessage.textContent = error;
