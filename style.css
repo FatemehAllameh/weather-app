@@ -68,6 +68,7 @@ button {
 
 .back-btn {
   display: none;
+  font-size: 3rem;
   color: #6c90c6;
   text-shadow: 0 0 5px rgba(108, 144, 198, 0.3),
     0 0 10px rgba(108, 144, 198, 0.2), 0 0 15px rgba(108, 144, 198, 0.1);
