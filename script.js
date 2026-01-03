@@ -39,6 +39,19 @@ const getWeather = async (url) => {
   }
 };
 
+// set input direction dynamicly
+searchInput.addEventListener("input", () => {
+  isPersian(searchInput.value);
+});
+
+// see if input content is persian or not
+
+const isPersian = (text) => {
+  const persianRegex = /[\u0600-\u06FF\u0750-\u077F]/;
+  const inputDirection = persianRegex.test(text) ? "rtl" : "ltr";
+  searchInput.style.direction = inputDirection;
+};
+
 // function to back to previous section
 backButton.addEventListener("click", () => {
   errorMessage.style.display = "none";
