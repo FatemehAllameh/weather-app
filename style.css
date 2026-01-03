@@ -125,7 +125,6 @@ button {
   color: #ff5252;
   font-size: 1.8rem;
   padding: 1rem;
-  height: 4rem;
   border-radius: 5px;
   text-align: center;
   border: 1px solid #ff5252;
@@ -193,7 +192,7 @@ button {
   color: white;
 }
 
-.weater-icon {
+.weather-icon {
   width: 20rem;
 }
 
@@ -206,6 +205,8 @@ button {
 }
 
 .location-box {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .fa-map-marker {
@@ -236,7 +237,7 @@ button {
 }
 
 .bx {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #6991cc;
 }
 
