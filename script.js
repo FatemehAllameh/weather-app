@@ -15,7 +15,7 @@ const locationButton = document.querySelector(".device-loc-btn");
 
 // API Data
 const API_KEY = "8198d3e30961c9df4165a740202792c3";
-const API_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&q=`;
+const API_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&units=metric&q=`;
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -39,7 +39,6 @@ const getWeather = async (url) => {
       searchBoxContainer.style.display = "none";
       resultContainer.style.display = "flex";
       backButton.style.display = "flex";
-      console.log(data);
       displayWeather(data);
     }
   } catch (err) {
@@ -116,7 +115,7 @@ locationButton.addEventListener("click", () => {
 const onSucess = (position) => {
   const { latitude, longitude } = position.coords;
   getWeather(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
   );
 };
 
